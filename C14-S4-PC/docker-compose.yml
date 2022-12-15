@@ -1,0 +1,49 @@
+version: "3.9"  #specifies the version of the docker-compose.yml
+services:
+  user-mysql-service:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    container_name: user-mysql-container
+    networks:
+      - user-network
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USERNAME: root
+      MYSQL_PASSWORD: root
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+
+  user-authentication-service:
+    container_name: user-authentication-container
+    build: UserAuthenicationService/
+    networks:
+      - user-network
+    ports:
+      - "8082:8082"
+    depends_on:
+      - user-mysql-service
+    restart: always
+
+  mongo-service:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    container_name: mongo-product-container
+    networks:
+      - user-network
+
+  product-service:
+    container_name: product-container
+    build: UserProductService/
+    networks:
+      - user-network
+    ports:
+      - "8071:8071"
+    depends_on:
+      - mongo-service
+    restart: always
+
+
+networks:
+  user-network:
+    driver: bridge
