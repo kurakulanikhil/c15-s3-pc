@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/C14-S4-PC/ApiGateWay/ApiGateWay.iml" filepath="$PROJECT_DIR$/C14-S4-PC/ApiGateWay/ApiGateWay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/C14-S4-PC/UserProductService/C13-S1-PC.iml" filepath="$PROJECT_DIR$/C14-S4-PC/UserProductService/C13-S1-PC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/C14-S4-PC/UserAuthenicationService/C14-S1-SpringJWT.iml" filepath="$PROJECT_DIR$/C14-S4-PC/UserAuthenicationService/C14-S1-SpringJWT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/C14-S4-PC/C14-S4-PC.iml" filepath="$PROJECT_DIR$/C14-S4-PC/C14-S4-PC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/C14-S4-PC/EurekaServer/EurekaServer.iml" filepath="$PROJECT_DIR$/C14-S4-PC/EurekaServer/EurekaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/c15-s2-pc1.iml" filepath="$PROJECT_DIR$/.idea/c15-s2-pc1.iml" />
+    </modules>
+  </component>
+</project>

@@ -9,16 +9,21 @@
         <module name="EurekaServer" />
         <module name="C13-S1-PC" />
         <module name="C14-S1-SpringJWT" />
-        <module name="C13-S3-CustomerService" />
         <module name="ApiGateWay" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ApiGateWay" target="11" />
+      <module name="C13-S1-PC" target="11" />
+      <module name="C14-S1-SpringJWT" target="11" />
+      <module name="C14-S4-PC" target="1.8" />
+      <module name="EurekaServer" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ApiGateWay" options="-parameters" />
       <module name="C13-S1-PC" options="-parameters" />
-      <module name="C13-S3-CustomerService" options="-parameters" />
       <module name="C14-S1-SpringJWT" options="-parameters" />
       <module name="EurekaServer" options="-parameters" />
     </option>
